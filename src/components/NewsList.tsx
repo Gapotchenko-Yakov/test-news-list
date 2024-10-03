@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { News } from "../types";
 import { Container, Typography, List } from "@mui/material";
 import NewsListItem from "./NewsListItem";

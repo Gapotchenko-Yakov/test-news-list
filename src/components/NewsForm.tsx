@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   TextField,
   Button,
-  Container,
   Typography,
   Box,
   ContainerProps,
@@ -18,7 +17,7 @@ const NewsForm = ({ addOrEditNews, existingNews, sx }: NewsFormProps) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [author, setAuthor] = useState("");
-  const [createdAt, setCreatedAt] = useState(
+  const [_createdAt, setCreatedAt] = useState(
     new Date().toISOString().substring(0, 10)
   );
 
