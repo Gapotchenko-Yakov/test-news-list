@@ -42,7 +42,7 @@ const NewsList = () => {
   return (
     <Container>
       <Typography variant="h1" sx={{ mb: 3 }}>
-        News List
+        News
       </Typography>
       <Typography variant="h6">
         Render count: {renderCounterRef.current}

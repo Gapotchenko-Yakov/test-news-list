@@ -52,7 +52,7 @@ const NewsForm = ({ addOrEditNews, existingNews, sx }: NewsFormProps) => {
   };
 
   return (
-    <Box sx={sx}>
+    <Box sx={{ width: "100%", ...sx }}>
       <Typography variant={existingNews ? "h5" : "h4"} gutterBottom>
         {existingNews ? "Update News" : "Add News"}
       </Typography>

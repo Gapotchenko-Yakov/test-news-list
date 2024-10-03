@@ -32,13 +32,14 @@ const NewsListItem = ({ news, deleteNews, editNews }: ListItemProps) => {
         borderBottom: "1px solid #ddd",
         display: "flex",
         flexDirection: "column",
+        alignItems: "stretch",
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
-          maxWidth: "100%",
+          // maxWidth: "100%",
           justifyContent: "space-between",
         }}
       >
