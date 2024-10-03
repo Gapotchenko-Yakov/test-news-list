@@ -51,6 +51,7 @@ const NewsList = () => {
         {newsList.length > 0 ? (
           newsList.map((news) => (
             <NewsListItem
+              key={news.id}
               news={news}
               deleteNews={deleteNews}
               editNews={editNews}
@@ -60,7 +61,7 @@ const NewsList = () => {
           <Typography variant="body1">No news available.</Typography>
         )}
       </List>
-      <NewsForm addNews={addNews} />
+      <NewsForm addOrEditNews={addNews} />
     </Container>
   );
 };
